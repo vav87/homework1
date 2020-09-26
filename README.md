@@ -40,3 +40,10 @@ java -jar main-module/build/libs/main-module.jar
 1. Для парсинга ответа использовать Json (реализацию от Google [Gson](https://github.com/google/gson)) или [JsonPath](https://github.com/json-path/JsonPath).
 1. Для загрузки плагинов использовать URLCLassLoader.
 1. Если требуется добавить какие-то дополнительные библиотеки, то делать это через Gradle. [Пример](https://docs.gradle.org/current/userguide/dependency_management_for_java_projects.html).
+
+##  Как сдавать?
+* Fork этого репозитория
+* Merge request
+
+## Дедлайн
+11 октября 23:59
