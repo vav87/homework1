@@ -43,7 +43,7 @@ java -jar main-module/build/libs/main-module.jar
 
 ##  Как сдавать?
 * Fork этого репозитория
-* Merge request
+* Merge request вашей реализации в этот репозиторий
 
 ## Дедлайн
 11 октября 23:59
