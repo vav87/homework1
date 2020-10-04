@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class FrequencyDictionaryPluginTest {
-    private static final Pattern SPLITTER = Pattern.compile("(\\d+)\\s+(\\S+)");
+    private static final Pattern SPLITTER = Pattern.compile("(\\S+)\\s+(\\d+)");
     private final FrequencyDictionaryPlugin plugin = new FrequencyDictionaryPlugin();
 
     @ParameterizedTest
