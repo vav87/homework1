@@ -16,7 +16,8 @@ public class FrequencyDictionaryPlugin
         String textToApply = text.replaceAll("\\\\n", "\n").toLowerCase();
 
         List<String> words = new ArrayList<String>();
-        Matcher m = Pattern.compile("\\b[a-zA-Z]+(-|')*[a-zA-Z.0-9]*\\b").matcher(textToApply);
+        // regex с которым количество слов совпадает с интеграционным тестом \b[a-zA-Z][a-zA-Z.0\/-]*\b
+        Matcher m = Pattern.compile("\\b[a-zA-Z][a-zA-Z.0-9]*\\b").matcher(textToApply);
         while (m.find()) {
             words.add(m.group());
         }

@@ -23,7 +23,8 @@ public class CounterPlugin
         }
 
         List<String> words = new ArrayList<>();
-        Matcher m = Pattern.compile("\\b[a-zA-Z]+(-|')*[a-zA-Z.0-9]*\\b").matcher(textToAply);
+        // regex с которым количество слов совпадает с интеграционным тестом \b[a-zA-Z][a-zA-Z.0\/-]*\b
+        Matcher m = Pattern.compile("\\b[a-zA-Z][a-zA-Z.0-9]*\\b").matcher(textToAply);
         while (m.find()) {
             words.add(m.group());
         }
